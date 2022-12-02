@@ -7,6 +7,7 @@ string Num(int num, int num2)
     else
         return $"некратно, остаток = {num % num2}";
 }
+
 Console.WriteLine("Введите число");
 int n = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число");
