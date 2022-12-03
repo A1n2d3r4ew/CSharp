@@ -2,22 +2,19 @@
 //число и на выходе показывает вторую цифру этого числа
 
 
-
-
-string N(int num);
-{
-int count = 1000;
-int max = num;
-while(max < count)
-{
-    if (num % 10 == num / 10)
-        return ($"Вторая цифра числа: {num}");
-    else
-        return ($"Ошибка");
-}
-
-}
-
 Console.WriteLine("Напишите трехзначное число:  ");
 int n = int.Parse(Console.ReadLine());
 Console.WriteLine(N(n));
+int N(int num)
+{
+    int num = 0;
+    if(99 < num)
+    {
+        if (num < 1000)
+           int num = num % 10;
+            
+    else
+        Console.WriteLine("Число не трехщначное");
+    }
+}
+
