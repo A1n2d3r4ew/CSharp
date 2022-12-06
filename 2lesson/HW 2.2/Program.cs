@@ -4,19 +4,9 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-//  N( int[] n = {} )
+int N(int n)
 {
-    if (int[] n > 2)
-    {
-        n = n / 10;
-        n = n % 10;
-        return $"{n}";
-    }
-    else 
-        return "третьей цифры нет";
-    
+    if (n < 100)
+        return $"третьей цифры нет";
+    else
 }
-
-Console.WriteLine("Введите число");
-int[] a = {int.Parse(Console.ReadLine())};
-Console.WriteLine(N(int[] a));
