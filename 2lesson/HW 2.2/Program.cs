@@ -4,9 +4,16 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-int N(int n)
+void N(int n)
 {
+    Console.Write($"{n}    ");
     if (n < 100)
-        return $"третьей цифры нет";
-    else
+    {
+        Console.WriteLine($"третьей цифры нет");
+        return;
+    }
+    while (n > 999) n /= 10;
+    Console.WriteLine(n % 10);
 }
+
+N(int.Parse(Console.ReadLine()));
