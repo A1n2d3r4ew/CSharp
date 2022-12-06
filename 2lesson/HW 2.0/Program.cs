@@ -1,20 +1,22 @@
 ﻿//Напишите программу, которая принимает на вход трехзначное 
 //число и на выходе показывает вторую цифру этого числа
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
 
 
-Console.WriteLine("Напишите трехзначное число:  ");
-int n = int.Parse(Console.ReadLine());
-Console.WriteLine(N(n));
-int N(int num)
+
+string N(int num)
 {
-    int num = 0;
-    if(99 < num)
+    if(num < 1000 && num > 99)
     {
-        if (num < 1000)
-           int num = num % 10;
-            
-    else
-        Console.WriteLine("Число не трехщначное");
+        num = num / 10;
+        return($"{num = num % 10}");
     }
+    else
+        return($"ошибка");
 }
 
+Console.WriteLine("Напишите трехзначное число: ");
+int a = int.Parse(Console.ReadLine());
+Console.WriteLine(N(a));
