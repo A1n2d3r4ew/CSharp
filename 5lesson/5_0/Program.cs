@@ -38,7 +38,7 @@ void SumPosNeg(int[] array)
     Console.WriteLine($"Positive: {pos}, negative: {neg}");
 }
 
-int[] array_1 = EightMass(int.Parse(Console.ReadLine()),
+int[] array_1 = Mass(int.Parse(Console.ReadLine()),
                           int.Parse(Console.ReadLine()),
                           int.Parse(Console.ReadLine()));
 PrintArray(array_1);
