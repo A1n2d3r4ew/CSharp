@@ -1,5 +1,6 @@
 ﻿// Напишите программу, которая будет создавать копию 
 // заданного массива с помощью поэлементного копирования.
+// https://studok.net/obrazovanie-i-kommunikacii/vopros-kak-vychislit-tochku-peresechenija-dvuh-prjamyh/
 
 int[,] Mass(int raw, int stolb)
 {
