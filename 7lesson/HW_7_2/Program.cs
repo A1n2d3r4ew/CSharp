@@ -34,31 +34,20 @@ void Print(int[,] array)
 
 void Average(int[,] array)
 {
-    int i = 0;
-    int j = 0;
-    double aver_result = array[i, j];
-    int size = array.GetLength(0);
     
+    double aver_result;
+    int row = array.GetLength(0);
+    int columns = array.GetLength(1);
     
-    while (j < array.GetLength(1))
+    for (int i = 0; i < columns; i++)
     {
-        if (i < size)
-        {
-            aver_result = aver_result + aver_result;
-            Console.WriteLine($" {aver_result / size} ");
-            j++;
-        }
+        aver_result = 0;
+        for (int j = 0; j < row; j ++)
+        aver_result += array[j, i];
+        Console.Write($"{Math.Round(aver_result / row, 2)}; ");
     }
-    return;   
-    
     
 }       
-
-
-
-    // for (int j = 0; j < size, j ++)
-    //     aver_result = (j + j);
-    // return aver_result / size;
 
 
 Console.Write("Enter the number of raws: ");
